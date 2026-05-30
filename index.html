@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVA - Enfoques para el Estudio de la TGS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --bg-light: #f8f9fa;
+        }
+        body {
+            background-color: var(--bg-light);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 0;
+        }
+        .card-custom {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            background: white;
+            transition: transform 0.2s;
+        }
+        .card-custom:hover {
+            transform: translateY(-3px);
+        }
+        .nav-pills .nav-link.active {
+            background-color: var(--primary-color);
+        }
+        .badge-number {
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            padding: 4px 9px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .game-frame {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <span class="badge bg-warning text-dark mb-2 fw-bold">PROYECTO FINAL N° 11</span>
+            <h1 class="display-5 fw-bold">Enfoques para el Estudio de la TGS</h1>
+            <p class="lead mb-0">Objeto Virtual de Aprendizaje (OVA) interactivo para la comprensión sistémica</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="bi bi-diagram-3-fill me-2"></i>TGS - OVA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavNav" aria-controls="navbarNavNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavNav">
+                <div class="nav nav-pills flex-column flex-lg-row ms-auto gap-2 py-2 py-lg-0" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+                    <button class="nav-link text-white active" id="pill-inicio-tab" data-bs-toggle="pill" data-bs-target="#pill-inicio" type="button" role="tab"><i class="bi bi-house-door-fill me-1"></i> Inicio</button>
+                    <button class="nav-link text-white" id="pill-teoria-tab" data-bs-toggle="pill" data-bs-target="#pill-teoria" type="button" role="tab"><i class="bi bi-book-half me-1"></i> Contenido Teórico</button>
+                    <button class="nav-link text-white" id="pill-multimedia-tab" data-bs-toggle="pill" data-bs-target="#pill-multimedia" type="button" role="tab"><i class="bi bi-play-btn-fill me-1"></i> Multimedia</button>
+                    <button class="nav-link text-white" id="pill-juegos-tab" data-bs-toggle="pill" data-bs-target="#pill-juegos" type="button" role="tab"><i class="bi bi-controller me-1"></i> Juegos</button>
+                    <button class="nav-link text-white" id="pill-evaluacion-tab" data-bs-toggle="pill" data-bs-target="#pill-evaluacion" type="button" role="tab"><i class="bi bi-card-checklist me-1"></i> Evaluación</button>
+                    <button class="nav-link text-white" id="pill-creditos-tab" data-bs-toggle="pill" data-bs-target="#pill-creditos" type="button" role="tab"><i class="bi bi-person-badge-fill me-1"></i> Créditos</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="tab-content" id="v-pills-tabContent">
+            
+            <div class="tab-pane fade show active" id="pill-inicio" role="tabpanel" aria-labelledby="pill-inicio-tab">
+                <div class="row g-4">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card card-custom p-4">
+                            <h2 class="fw-bold mb-3 text-dark"><i class="bi bi-info-circle-fill text-primary me-2"></i>Contextualización del Tema</h2>
+                            <p class="text-muted leading-relaxed">
+                                La Teoría General de Sistemas (TGS) no busca solucionar problemas de forma aislada dentro de disciplinas específicas. Su verdadera meta radica en descubrir principios y leyes unificadoras que operen de forma idéntica en diferentes campos del conocimiento, independientemente de la naturaleza de sus elementos constitutivos.
+                            </p>
+                            
+                            <hr class="my-4">
+                            
+                            <h3 class="fw-bold mb-3 text-dark text-primary h5"><i class="bi bi-shield-check me-2"></i>Justificación de su Importancia</h3>
+                            <p class="text-muted mb-0">
+                                Comprender los <strong>Enfoques para el estudio de la TGS</strong> dota a los estudiantes y profesionales de herramientas metodológicas estructuradas para modelar realidades organizacionales y tecnológicas complejas. Permite realizar un balance preciso entre la rigurosidad científica empírica y la visión macro integral necesaria en el análisis contemporáneo de sistemas informáticos y corporativos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pill-teoria" role="tabpanel" aria-labelledby="pill-teoria-tab">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="card card-custom p-4 bg-white">
+                            <h2 class="fw-bold mb-3"><i class="bi bi-bookmark-fill text-primary me-2"></i>Líneas de Ataque en la TGS</h2>
+                            <p class="text-muted mb-0">
+                                De acuerdo con el planteamiento clásico de **Ludwig von Bertalanffy**, la formulación de leyes y modelos sistémicos aplicables a múltiples ciencias se puede abordar de manera concreta a través de dos enfoques metodológicos principales.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card card-custom p-4 h-100">
+                            <h3 class="h5 fw-bold text-dark"><i class="bi bi-search me-2 text-success"></i>1. Enfoque Empírico-Intuitivo</h3>
+                            <p class="text-muted small">
+                                Consiste en examinar directamente el universo de los fenómenos empíricos existentes dentro de variados ámbitos científicos (fisiología, economía, cibernética, etc.) para luego seleccionar ciertas propiedades comunes que se manifiesten en ellos. Una vez identificadas, se procede a formalizar modelos conceptuales o matemáticos generales que representen estos principios compartidos.
+                            </p>
+                            <div class="bg-light p-3 rounded mt-auto border-start border-success border-3">
+                                <span class="fw-bold text-success d-block small mb-1"><i class="bi bi-lightbulb"></i> Ejemplo en Caso Real:</span>
+                                <p class="mb-0 text-muted small">El estudio matemático del <strong>"crecimiento"</strong>. Los principios que gobiernan el incremento de una colonia bacteriana, la expansión de la población de una ciudad o las métricas de tráfico transaccional en un servidor web siguen patrones analíticos y curvas algebraicas sumamente similares.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card card-custom p-4 h-100">
+                            <h3 class="h5 fw-bold text-dark"><i class="bi bi-bar-chart-steps me-2 text-info"></i>2. Enfoque Metodológico Jerárquico</h3>
+                            <p class="text-muted small">
+                                En lugar de centrarse de forma aislada en fenómenos recurrentes, este enfoque organiza los campos de estudio empíricos del mundo material y social en una escala jerárquica bien definida, fundamentada enteramente en el grado de complejidad estructural que presentan las unidades u organizaciones que los componen.
+                            </p>
+                            <div class="bg-light p-3 rounded mt-auto border-start border-info border-3">
+                                <span class="fw-bold text-info d-block small mb-1"><i class="bi bi-lightbulb"></i> Ejemplo en Caso Real:</span>
+                                <p class="mb-0 text-muted small">La estructuración de un sistema de información empresarial. Se modela partiendo de componentes hardware básicos de bajo nivel (estáticos), integrando bucles automatizados de software (control cibernético), hasta llegar a las operaciones del factor humano o junta directiva (organización social).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="card card-custom p-4">
+                            <h3 class="fw-bold h5 text-dark mb-3"><i class="bi bi-layers-half text-warning me-2"></i>La Jerarquía de Complejidad de Boulding</h3>
+                            <p class="text-muted small mb-4">Como núcleo fundamental del segundo enfoque, Kenneth Boulding propuso una ordenación sistemática estructurada en 9 niveles diferenciados para clasificar el conocimiento científico:</p>
+                            
+                            <div class="table-responsive">
+                                <table class="table table-hover align-middle">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th style="width: 8%;">Nivel</th>
+                                            <th style="width: 27%;">Clasificación</th>
+                                            <th>Definición y Alcance Teórico</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td><span class="badge-number">1</span></td><td><strong>Estructuras Estáticas</strong></td><td class="text-muted small">El marco geográfico o físico rígido de la materia macroscópica (ej. cristales, planos arquitectónicos).</td></tr>
+                                        <tr><td><span class="badge-number">2</span></td><td><strong>Sistemas Dinámicos Simples</strong></td><td class="text-muted small">Movimientos predeterminados con precisión absoluta (ej. el sistema solar o engranajes de un reloj mecánico).</td></tr>
+                                        <tr><td><span class="badge-number">3</span></td><td><strong>Mecanismos de Control (Cibernéticos)</strong></td><td class="text-muted small">Sistemas capaces de autorregularse autónomamente mediante bucles de retroalimentación interna (ej. un termostato).</td></tr>
+                                        <tr><td><span class="badge-number">4</span></td><td><strong>Sistemas Abiertos</strong></td><td class="text-muted small">Estructuras con capacidad intrínseca de automantenimiento mediante intercambio continuo con el entorno (ej. células vivas).</td></tr>
+                                        <tr><td><span class="badge-number">5</span></td><td><strong>Genético-Social</strong></td><td class="text-muted small">El nivel botánico. Plantas organizadas con receptores informativos rudimentarios y diferenciación celular.</td></tr>
+                                        <tr><td><span class="badge-number">6</span></td><td><strong>Mundo Animal</strong></td><td class="text-muted small">Sistemas dotados de movilidad autónoma coordinada, receptores especializados sensoriales y aprendizaje conductual.</td></tr>
+                                        <tr><td><span class="badge-number">7</span></td><td><strong>El Ser Humano</strong></td><td class="text-muted small">El individuo considerado como un sistema integral complejo que posee autoconciencia, lenguaje simbólico y lógica abstracta.</td></tr>
+                                        <tr><td><span class="badge-number">8</span></td><td><strong>Organizaciones Sociales</strong></td><td class="text-muted small">Conjunto coordinado de roles interconectados, flujos comunicacionales y valores compartidos (ej. empresas, comunidades).</td></tr>
+                                        <tr><td><span class="badge-number">9</span></td><td><strong>Sistemas Trascendentales</strong></td><td class="text-muted small">Estructuras absolutas e inescrutables que escapan a la categorización científica actual pero exhiben un orden sistémico.</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pill-multimedia" role="tabpanel" aria-labelledby="pill-multimedia-tab">
+                <div class="row g-4">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card card-custom p-4 text-center">
+                            <h2 class="fw-bold mb-3 text-dark"><i class="bi bi-collection-play-fill text-danger me-2"></i>Recursos Audiovisuales</h2>
+                            <p class="text-muted mb-4">Visualiza el siguiente video didáctico para reforzar la comprensión sobre la diferencia entre enfoques sistémicos y los niveles de complejidad teóricos.</p>
+                            
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/fTiaI606f_s" title="Teoría General de Sistemas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="alert alert-secondary mt-3 mb-0 small text-start">
+                                <i class="bi bi-info-circle me-1"></i> <strong>Nota:</strong> Este material complementa los conceptos explicados en la sección de contenido de la presente OVA.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pill-juegos" role="tabpanel" aria-labelledby="pill-juegos-tab">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card card-custom p-4">
+                            <h3 class="h5 fw-bold text-dark mb-2"><i class="bi bi-controller text-primary me-2"></i>Actividad 1: Crucigrama de Conceptos</h3>
+                            <p class="text-muted small mb-3">Encuentra los términos clave relacionados con las líneas de ataque intuitivas y los niveles jerárquicos de la asignatura.</p>
+                            <iframe class="game-frame" src="https://wordwall.net/es/embed/460aef73fb784ffea74cefa940e74f76?themeId=1" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card card-custom p-4">
+                            <h3 class="h5 fw-bold text-dark mb-2"><i class="bi bi-controller text-primary me-2"></i>Actividad 2: Relación de Niveles</h3>
+                            <p class="text-muted small mb-3">Une correctamente cada uno de los niveles de complejidad de Boulding con sus correspondientes descripciones.</p>
+                            <iframe class="game-frame" src="https://wordwall.net/es/embed/395dbfcba2a64c48972fc0020ae42194?themeId=1" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pill-evaluacion" role="tabpanel" aria-labelledby="pill-evaluacion-tab">
+                <div class="row g-4">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card card-custom p-4" id="quiz-card">
+                            <h2 class="fw-bold mb-2 text-dark"><i class="bi bi-patch-check-fill text-success me-2"></i>Evaluación de Conocimientos</h2>
+                            <p class="text-muted small mb-4">Responde las siguientes preguntas de selección múltiple para verificar tu nivel de asimilación conceptual.</p>
+                            
+                            <form id="quizForm">
+                                <div class="mb-4">
+                                    <label class="fw-bold text-secondary small d-block mb-2">1. ¿En qué consiste el enfoque empírico-intuitivo propuesto por Bertalanffy?</label>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="q1" value="A" id="q1a" required>
+                                        <label class="form-check-label small" for="q1a">En fragmentar un sistema complejo en sus partes más pequeñas para analizarlas por separado.</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q1" value="B" id="q1b">
+                                        <label class="form-check-label small" for="q1b">En observar fenómenos en diferentes campos y abstraer leyes generales comunes a todos ellos.</label>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="fw-bold text-secondary small d-block mb-2">2. Un termostato automático o un bucle de retroalimentación en un software corresponden al nivel boulding de:</label>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="q2" value="A" id="q2a" required>
+                                        <label class="form-check-label small" for="q2a">Mecanismos de Control o Sistemas Cibernéticos (Nivel 3).</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q2" value="B" id="q2b">
+                                        <label class="form-check-label small" for="q2b">Estructuras Dinámicas Simples (Nivel 2).</label>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="fw-bold text-secondary small d-block mb-2">3. ¿Qué nivel de complejidad ocupan las empresas, la universidad y las comunidades en la escala jerárquica de Boulding?</label>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="q3" value="A" id="q3a" required>
+                                        <label class="form-check-label small" for="q3a">Nivel 8: Organizaciones Sociales.</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q3" value="B" id="q3b">
+                                        <label class="form-check-label small" for="q3b">Nivel 7: El Ser Humano.</label>
+                                    </div>
+                                </div>
+
+                                <button type="button" onclick="calcularPuntaje()" class="btn btn-success w-100 fw-bold py-2"><i class="bi bi-check2-circle me-1"></i> Enviar y Evaluar Respuestas</button>
+                            </form>
+
+                            <div class="alert mt-4 d-none text-center" id="quizResult" role="alert"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pill-creditos" role="tabpanel" aria-labelledby="pill-creditos-tab">
+                <div class="row g-4">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card card-custom p-4">
+                            <h2 class="fw-bold mb-3 text-dark"><i class="bi bi-file-earmark-person-fill text-secondary me-2"></i>Ficha Técnica de la OVA</h2>
+                            
+                            <ul class="list-group list-group-flush mb-4 small">
+                                <li class="list-group-item"><strong>Autor de la OVA:</strong> Jaider Puertas Perdomo</li>
+                                <li class="list-group-item"><strong>Institución:</strong> Universidad Simón Bolívar</li>
+                                <li class="list-group-item"><strong>Sede:</strong> Cúcuta, Colombia</li>
+                                <li class="list-group-item"><strong>Asignatura:</strong> Teoría General de Sistemas (TGS)</li>
+                                <li class="list-group-item"><strong>Entorno Tecnológico Usado:</strong> HTML5, CSS3, Bootstrap Framework, JavaScript Nativo</li>
+                            </ul>
+
+                            <h3 class="fw-bold h6 text-dark mb-2"><i class="bi bi-journal-bookmark-fill text-primary me-2"></i>Referencias Académicas</h3>
+                            <p class="text-muted small bg-light p-3 rounded mb-0">
+                                * Von Bertalanffy, L. (1968). <em>Teoría General de los Sistemas: Fundamentos, desarrollo, aplicaciones</em>. Fondo de Cultura Económica.<br><br>
+                                * Boulding, K. E. (1956). <em>General Systems Theory—The Skeleton of Science</em>. Management Science, 2(3), 197-208.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="small mb-1">&copy; 2026 Universidad Simón Bolívar - Vigilada Mineducación</p>
+            <p class="small text-muted mb-0">Barranquilla y Cúcuta, Colombia</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        function calcularPuntaje() {
+            const form = document.getElementById('quizForm');
+            
+            // Validar que se hayan seleccionado todas las preguntas obligatorias
+            if (!form.checkValidity()) {
+                alert("Por favor, responde todas las preguntas del quiz antes de evaluar.");
+                return;
+            }
+
+            let correctas = 0;
+            
+            // Respuestas correctas del cuestionario
+            if (form.q1.value === "B") correctas++;
+            if (form.q2.value === "A") correctas++;
+            if (form.q3.value === "A") correctas++;
+
+            const resultDiv = document.getElementById('quizResult');
+            resultDiv.classList.remove('d-none', 'alert-success', 'alert-danger');
+            
+            // Cambiar estilos y color de alerta de acuerdo al puntaje final obtenido
+            if (correctas >= 2) {
+                resultDiv.classList.add('alert-success');
+                resultDiv.innerHTML = `<h5><i class="bi bi-emoji-smile-fill me-2"></i>¡Excelente Rendimiento!</h5> Tu puntaje fue de <strong>${correctas} / 3</strong> respuestas correctas. Has comprendido con éxito los enfoques de la TGS.`;
+            } else {
+                resultDiv.classList.add('alert-danger');
+                resultDiv.innerHTML = `<h5><i class="bi bi-exclamation-triangle-fill me-2"></i>Necesitas Repasar</h5> Tu puntaje fue de <strong>${correctas} / 3</strong> respuestas correctas. Te recomendamos releer la sección teórica de la OVA.`;
+            }
+        }
+    </script>
+</body>
+</html>
